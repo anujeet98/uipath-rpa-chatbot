@@ -1,0 +1,24 @@
+{
+    "server": {
+        "host": "127.0.0.1",
+        "port": 6543
+    },
+    "orchestrator": {
+        "hostname": "platform.uipath.com",
+        "tenancyName": "anujeet_swain",
+        "usernameOrEmailAddress": "anujeet98@gmail.com",
+        "password": "anujeet123"
+    },
+    "dialogflow": {
+        "token": "e61ec523231c4ec78297b1828d9fb0e2"
+    },
+    "log": {
+        "appenders": {
+            "console": {"type": "console"}
+        },
+        "categories": {
+            "default": {"appenders": ["console"], "level": "trace"}
+        },
+        "replaceConsole": true
+    }
+}

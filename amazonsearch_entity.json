@@ -1,0 +1,35 @@
+{
+  "id": "c4372c57-03b6-494b-bf50-80b24bca4640",
+  "name": "amazonsearch",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "PC parts",
+      "synonyms": [
+        "PC parts"
+      ]
+    },
+    {
+      "value": "pop music CDs",
+      "synonyms": [
+        "pop music CDs",
+        "rock music"
+      ]
+    },
+    {
+      "value": "a book called \"Around the World in Eighty Days\"",
+      "synonyms": [
+        "a book called"
+      ]
+    },
+    {
+      "value": "some science-fiction books",
+      "synonyms": [
+        "some science-fiction books",
+        "and autobiography of einstein"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

@@ -1,0 +1,106 @@
+{
+  "id": "9e33e40b-22fe-4811-a17e-a12d10ac4176",
+  "name": "AmazonSearch",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "AMAZON_SEARCH",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ba046dfb-65a3-4c12-b52a-234f0c5f50b1",
+          "required": true,
+          "dataType": "@amazonsearch",
+          "name": "amazon-search",
+          "value": "$amazon-search",
+          "prompts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "On it!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1523595432,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d5acb9e5-2f99-4659-94cf-1ade1532c5e1",
+      "data": [
+        {
+          "text": "Please check "
+        },
+        {
+          "text": "rock music",
+          "alias": "amazon-search",
+          "meta": "@amazonsearch",
+          "userDefined": true
+        },
+        {
+          "text": " on amazon"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1523590109,
+      "isAuto": false
+    },
+    {
+      "id": "93006407-ca93-46fd-a9c3-416af4602dbd",
+      "data": [
+        {
+          "text": "Search amazon for "
+        },
+        {
+          "text": "avatar blu ray",
+          "alias": "amazon-search",
+          "meta": "@amazonsearch",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1523589033,
+      "isAuto": false
+    },
+    {
+      "id": "1027b5a2-65b3-4a61-afc6-bcd3312ff25c",
+      "data": [
+        {
+          "text": "Find some "
+        },
+        {
+          "text": "scifi movies",
+          "alias": "amazon-search",
+          "meta": "@amazonsearch",
+          "userDefined": true
+        },
+        {
+          "text": " on amazon"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1523595432,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
