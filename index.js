@@ -1,46 +1,41 @@
- Function errorHandler(error) {
-    // at this point, it is likely better to treat this as fatal
-    throw error;
+var express = require("express");
+var bodyParser = require("body-parser");
+
+
+var app = express();
+app.use(bodyParser.json());
+
+
+var server = app.listen(process.env.PORT || 8080, function () {
+var port = server.address().port;
+console.log("App now running on port", port);
+
+// CONTACTS API ROUTES BELOW
+
+// Generic error handler used by all endpoints.
+function handleError(res, reason, message, code) {
+  console.log("ERROR: " + reason);
+  res.status(code || 500).json({"error": message});
 }
-server = http.createServer();
-server.on('error', errorHandler);
-server.listen(config.port, config.host);
-logger.info('Server listening on ' + config.host + ':' + config.port);
+
+/*  "/api/contacts"
+ *    GET: finds all contacts
+ *    POST: creates a new contact
+ */
 
 
-
-
-server.post('/',function (request,response) {
-if(request.body.result.parameters['open-somaiya']) {
-req.send("{}");
-req.end(function(res) {
-if(res.error) {
-response.setHeader('Content-Type', 'application/json');
-response.send(JSON.stringify({
-"speech" : "Error. Can you try it again ? ",
-"displayText" : "Error. Can you try it again ? "
-}));
-} else if(res.body.results.length > 0) {
-let result = res.body.results;
-let output = '';
-for(let i = 0; i<result.length;i++) {
-output += result[i].title;
-output+="\n"
-}
-response.setHeader('Content-Type', 'application/json');
-response.send(JSON.stringify({
-"speech" : output,
-"displayText" : output
-}));
-}
+app.post("/", function(req, res) {
+  console.log(req.body);
+  if (!req.body.name) {
+    handleError(res, "Invalid user input", "Must provide a name.", 400);
+  } else {
+    db.collection(CONTACTS_COLLECTION).insertOne(newContact, function(err, doc) {
+      if (err) {
+        handleError(res, err.message, "Failed to create new contact.");
+      } else {
+        res.status(201).json(doc.ops[0]);
+      }
+    });
+  }
 });
-}
-}
 
-
-
-
-
-server.get(‘/getName’,function (req,res){
-res.send(‘Swarup Bam’);
-});
