@@ -3,13 +3,15 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
+    "apiai": "*",
     "async": "*",
     "config": "*",
-    "socket.io": "*",
+    "express": "^4.17.1",
     "log4js": "*",
-    "apiai": "*",
     "node-static": "*",
-    "uuid": "*",
-    "uipath-orchestrator": "*"
+    "socket.io": "*",
+    "uipath-orchestrator": "*",
+    "unirest": "^0.6.0",
+    "uuid": "*"
   }
 }
