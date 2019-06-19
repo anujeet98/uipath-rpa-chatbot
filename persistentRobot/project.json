@@ -3,14 +3,15 @@
   "description": "Blank Project",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.UIAutomation.Activities": "[19.2.0]",
-    "UiPath.System.Activities": "[19.2.0]"
+    "UiPath.System.Activities": "[19.2.0]",
+    "UiPath.UIAutomation.Activities": "[19.2.0]"
   },
   "schemaVersion": "3.2",
   "studioVersion": "18.2",
-  "projectVersion": "1.0.7101.33985",
+  "projectVersion": "1.0.7109.36854",
   "runtimeOptions": {
     "autoDispose": false,
+    "isPausable": true,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -24,5 +25,6 @@
   "arguments": {
     "input": [],
     "output": []
-  }
+  },
+  "webServices": []
 }
