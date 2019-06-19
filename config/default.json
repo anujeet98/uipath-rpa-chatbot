@@ -1,6 +1,6 @@
 {
     "server": {
-        "host": "https://nameless-chamber-36159.herokuapp.com/",
+        "host": "https://nameless-cham",
         "port": 6000
     },
     "orchestrator": {
