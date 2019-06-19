@@ -1,7 +1,7 @@
 {
     "server": {
-        "host": "127.0.0.1",
-        "port": 6543
+        "host": "https://nameless-chamber-36159.herokuapp.com/",
+        "port": 6000
     },
     "orchestrator": {
         "hostname": "platform.uipath.com",
