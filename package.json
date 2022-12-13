@@ -9,7 +9,7 @@
     "apiai": "*",
     "async": "*",
     "config": "*",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "log4js": "*",
     "node-static": "*",
     "socket.io": "*",
